@@ -4,7 +4,7 @@ This is a cheat sheet repo for [Flask](https://flask.palletsprojects.com/en/2.2.
 
 > Flask is a lightweight Python [WSGI](https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface?useskin=vector) (Web Server Gateway Interface) web application framework. It is similar to Express.js in Node.js
 
-## Installation for new projects
+## Installation for both new projects and cloned repos
 
 - Create a virtual environment
 
