@@ -52,6 +52,30 @@ flask --app app run --debug
 
 > To allow access to other devices on the network, use `--host=0.0.0.0`
 
+## Pass variables
+
+```python
+...
+def hello_name():
+name = 'John'
+return f"Hello {name}!"
+
+```
+
+## HTTP Methods
+
+```python
+# HTTP METHODS
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if request.method == "POST":
+        # DO THE LOGIN STUFF
+        return "You are now logged in"
+    else:
+        # SHOW THE LOGIN FORM
+        return "Please log in"
+```
+
 ## Resources
 
 - [Flask Documentation](https://flask.palletsprojects.com/en/2.2.x/)

@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     name = "John"
-    # NOTE: variables should be escaped, Jinja2 does this automatically
+    # NOTE: variables should be escaped, Jinja
     return f"<h1>Hello {name}</h1>"
 
 
@@ -19,3 +19,11 @@ def login():
     else:
         # SHOW THE LOGIN FORM
         return "Please log in"
+
+
+# URL PARAMETERS
+# specify the type using converters: <int:variable_name>
+# converters: int, float, path, uuid
+@app.route("/user/<name>")
+def user(name):
+    return f"Hello {name}"
