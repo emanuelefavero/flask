@@ -18,6 +18,12 @@
     <h1>Hello World</h1>
     {% endif %}
 
+    <!-- Form -->
+    <form action="/register" method="POST">
+      <input type="text" name="name" placeholder="Your name..." />
+      <input type="submit" value="Submit" />
+    </form>
+
     <a href="{{ url_for('about') }}">About</a>
   </body>
 </html>
