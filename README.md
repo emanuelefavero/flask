@@ -87,6 +87,16 @@ def user(name):
     return f"Hello {name}"
 ```
 
+## Static files
+
+- Add a folder called static to the root of the project
+- Add a file called `style.css` to the static folder
+- Reference that file in the HTML
+
+```html
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+```
+
 ## Resources
 
 - [Flask Documentation](https://flask.palletsprojects.com/en/2.2.x/)
