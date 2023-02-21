@@ -97,6 +97,21 @@ def user(name):
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
 ```
 
+## Template Engine (Jinja2)
+
+- Create a folder called `templates` in the root of the project
+- Create a file called `index.html` in the templates folder
+- Render the template in the view
+
+```python
+from flask import render_template
+
+@app.route("/")
+def index():
+  name = "John"
+    return render_template("index.html", name=name)
+```
+
 ## Resources
 
 - [Flask Documentation](https://flask.palletsprojects.com/en/2.2.x/)
