@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
@@ -6,8 +6,7 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     name = "John"
-    # NOTE: variables should be escaped, Jinja
-    return f"<h1>Hello {name}</h1>"
+    return render_template("index.html", name=name)
 
 
 # HTTP METHODS
