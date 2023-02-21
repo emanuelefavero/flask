@@ -76,6 +76,17 @@ def login():
         return "Please log in"
 ```
 
+## URL Parameters
+
+```python
+# URL PARAMETERS
+# specify the type using converters: <int:variable_name>
+# converters: int, float, path, uuid
+@app.route("/user/<name>")
+def user(name):
+    return f"Hello {name}"
+```
+
 ## Resources
 
 - [Flask Documentation](https://flask.palletsprojects.com/en/2.2.x/)
