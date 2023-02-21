@@ -12,12 +12,14 @@
     />
   </head>
   <body>
-    {% if name %}
-    <h1>Hello {{ name }}</h1>
-    {% else %}
-    <h1>Hello World</h1>
-    {% endif %}
-
-    <a href="{{ url_for('about') }}">About</a>
+    <h1>About</h1>
+    <p>
+      This is a simple Flask app that uses Jinja2 templating to render HTML
+      pages.
+    </p>
+    <p>
+      <!-- HOME LINK -->
+      <a href="{{ url_for('index') }}">Home</a>
+    </p>
   </body>
 </html>
