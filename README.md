@@ -112,6 +112,14 @@ def index():
     return render_template("index.html", title="Home", name=name)
 ```
 
+## Link between pages
+
+```html
+<a href="{{ url_for('index') }}">Home</a>
+```
+
+> Note: `index` is the name of the view function
+
 ## Resources
 
 - [Flask Documentation](https://flask.palletsprojects.com/en/2.2.x/)
