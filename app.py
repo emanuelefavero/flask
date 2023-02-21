@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     name = "John"
-    return render_template("index.html", name=name)
+    return render_template("index.html", title="Home", name=name)
 
 
 # HTTP METHODS
