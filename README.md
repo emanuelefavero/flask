@@ -125,3 +125,7 @@ def index():
 - [Flask Documentation](https://flask.palletsprojects.com/en/2.2.x/)
 - [WSGI](https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface?useskin=vector)
 - [Python](https://www.w3schools.com/python/)
+
+## License
+
+- [MIT](LICENSE.md)
